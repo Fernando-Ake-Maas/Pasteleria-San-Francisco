@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark  bg-grand1">
+    <div class="container">
+        <a class="navbar-brand" href="#">PASTELERIA SF</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['/Inicio']">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Nosotros']">CONOCENOS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/Productos']">PRODUCTOS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PARA EVENTOS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Bautizos</a></li>
+                    <li><a class="dropdown-item" href="#">XV Años</a></li>
+                    <li><a class="dropdown-item" href="#">Bodas</a></li>
+                    <li><a class="dropdown-item" href="#">Eventos Especiales</a></li>
+
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cheesecake</a></li>
+                    <li><a class="dropdown-item" href="#">Flan Napolitano</a></li>
+                    <li><a class="dropdown-item" href="#">Gelatina Mosaico</a></li>
+                  </ul>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/Sucursales']">SUCURSALES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/Contacto']">CONTACTO</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item ">
+                  <a class="nav-link " [routerLink]="['/Login']">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/Registro']">Registro</a>
+              </li>
+          </ul>
+        </div>
+  </div>
+</nav>
+<br>
+<router-outlet></router-outlet>
